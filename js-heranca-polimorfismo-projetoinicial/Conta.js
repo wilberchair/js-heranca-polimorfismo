@@ -12,15 +12,18 @@ export class Conta {
         this._saldo -= valorSacado;
         return valorSacado;
     }
-}
+  }
 
-depositar(valor){
-    this._saldo += valor;           
-}
+  depositar(valor){
+      this._saldo += valor;           
+  }
 
-tranferir(valor, conta){
+  tranferir(valor, conta){
     const valorSacado = this.sacar(valor);
-    conta.depositar(valorSacado);
-    
-}
+    conta.depositar(valorSacado);  
+  }
+
+  teste() {
+    console.log("teste na classe conta")
+  }
 } 
