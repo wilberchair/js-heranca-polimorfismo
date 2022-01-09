@@ -13,9 +13,4 @@ export class ContaCorrente extends Conta{
         //posso usar tanto o this como o super
         return this._sacar(valor, taxa);
     }
-
-    teste() {
-        super.teste()
-        console.log("teste na classe conta corrente")
-    }
 }
